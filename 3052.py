@@ -1,5 +1,1 @@
-arr = []
-for i in range(10):
-    a = int(input())
-    arr.append(a % 42)
-print(len(set(arr)))
+print(len(set(map(lambda x: int(x) % 42, input().split()))))
